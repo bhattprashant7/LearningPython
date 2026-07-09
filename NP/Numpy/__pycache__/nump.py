@@ -1,0 +1,30 @@
+
+import numpy as np
+# a=np.array([1,2,3,4])
+# print(a*2)
+# print(np.zeros(5))
+# print(np.arange(1,5))
+# b=np.array([[1,2,3],
+#            [4,5,6]])
+# print(np.sum(a))
+# print(b)
+# print(b.shape) #(2,3)i.e 2 row and 3 column
+# print(b.ndim)  #2 (two dimensional arrary)
+# print(b[0,1])
+# c=np.array([[7,8,9],[1,2,3]])
+# print(c)
+# d=np.array([1,2,3,4,5,6])
+# e=d.reshape(2,3)
+# print(e)
+# a=np.array([[1,2],[4,5]])
+# b=np.array([[5,6],[7,8]])
+# c=a@b
+# print(c)
+# marks=np.array([18,20,24,25,30,32,12])
+# d=np.sum(marks>=24)
+# print(d)
+a=np.array([4,9,25,36])
+print(np.sqrt(a))
+b=np.array([0])
+print(np.sin(b))
+print(np.sin(np.pi/2))
