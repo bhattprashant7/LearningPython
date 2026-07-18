@@ -96,19 +96,56 @@
 # sns.lineplot(data=df,x="Age",y="Salary",hue="Gender",style="Gender",palette="bright")
 # plt.show()
 
+# import seaborn as sns
+# import matplotlib.pyplot as plt
+# import pandas as pd
+
+# data = {
+#     "Age":[18,19,20,21],
+#     "Salary":[18000,19000,20000,21000]
+# }
+
+# df = pd.DataFrame(data)
+
+# plt.figure(figsize=(10,6))
+
+# sns.lineplot(data=df, x="Age", y="Salary")
+
+# plt.show()
+
+# import seaborn as sns
+# import matplotlib.pyplot as plt
+# import pandas as pd
+
+# data = {
+#     "Age":[18,19,20,21],
+#     "Salary":[18000,19000,20000,21000]
+# }
+
+# df = pd.DataFrame(data)
+# sns.lineplot(data=df, x="Age", y="Salary",marker="o")
+
+# plt.show()
+
+
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
 
 data = {
     "Age":[18,19,20,21],
-    "Salary":[18000,19000,20000,21000]
+    "Salary":[18000,19000,20000,21000],
+    "Gender":["Male","Female","Male","Female"]
 }
 
 df = pd.DataFrame(data)
-
-plt.figure(figsize=(10,6))
-
-sns.lineplot(data=df, x="Age", y="Salary")
-
+sns.lineplot(
+    data=df,
+    x="Age",
+    y="Salary",
+    hue="Gender",
+    style="Gender",
+    markers=True,
+    dashes=False
+)
 plt.show()
