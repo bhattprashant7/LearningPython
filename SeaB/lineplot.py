@@ -146,6 +146,6 @@ sns.lineplot(
     hue="Gender",
     style="Gender",
     markers=True,
-    dashes=False
+    dashes=False   
 )
 plt.show()
