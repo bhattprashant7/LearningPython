@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 var=sns.load_dataset("penguins")
 print(var)
-sns.displot(var["flipper_length_mm"],bins=[170,180,190,200,210,220,230,240],)
+sns.displot(var["flipper_length_mm"],bins=[170,180,190,200,210,220,230,240],kde=True,rug=True,color="g")
 #sns.displot(data=var, x="bill_length_mm")
 plt.show()
 
